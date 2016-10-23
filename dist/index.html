@@ -3,24 +3,34 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc-Chat</title>
-    <link rel="stylesheet" href="/styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/home.css">
 </head>
 <body>
-    
+	
+    <ui-view></ui-view>
+	
 	<!-- Angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<!-- firebase -->
 	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
 	<!-- AngularFire -->
 	<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	
 	<script src="/scripts/app.js"></script>
+	<script src="/scripts/controllers/HomeCtrl.js"></script>
+	<script src="/scripts/controllers/Rooms.js"></script>
+		
 	<script>
-		var config = {
+		// Initialize Firebase
+		var app = firebase.initializeApp({
 			apiKey: 'AIzaSyAlePtXD-bk-xZku_RsHZ8nEEv1xx7PU-4',
     		authDomain: 'bloc-chat-f7983.firebaseapp.com',
     		databaseURL: 'https://bloc-chat-f7983.firebaseio.com/',
     		storageBucket: 'bloc-chat-f7983.appspot.com'
-  		};
+  		});
+		
 	</script>
 </body>
 </html>

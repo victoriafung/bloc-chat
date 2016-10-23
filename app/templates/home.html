@@ -1,1 +1,16 @@
-<h1>Home Page</h1>
+<section class="top">
+	<h1 id="title">Bloc Chat</h1>
+	<p id="tagline">Chat now!</p>
+</section>
+
+<div class="sidebar">
+	<div class="header">
+		<p class="title">Chat Rooms List</p>
+	</div>
+	
+	<section class="rooms-list">
+		<div ng-repeat="room in home.chatRooms" class="chatrooms">
+			<p>{{ room.name }}</p>
+		</div>
+	</section>
+</div>
