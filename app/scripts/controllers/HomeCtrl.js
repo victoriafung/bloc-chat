@@ -4,6 +4,6 @@
 	}
 	
 	angular
-		.module('blocChat')
-		.controller('HomeCtrl', ['Room', HomeCtrl]);
+	.module('blocChat')
+	.controller('HomeCtrl', ['Rooms', HomeCtrl]);
 })();

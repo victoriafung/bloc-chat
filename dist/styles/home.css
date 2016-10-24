@@ -1,4 +1,3 @@
-
 .top #title {
 	text-align: center;
 }
@@ -25,9 +24,5 @@
 
 .sidebar .rooms-list {
 	margin: auto;
-	padding-top: 15px;
-}
-
-.sidebar .rooms-list .chatrooms {
-	text-align: center;
+	padding-top: 20px;
 }
