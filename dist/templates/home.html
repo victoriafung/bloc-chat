@@ -1,6 +1,6 @@
 <section class="top">
 	<h1 id="title">Bloc Chat</h1>
-	<p id="tagline">Chat now!</p>
+	<p id="tagline"></p>
 </section>
 
 <div class="sidebar">
@@ -12,5 +12,11 @@
 		<div ng-repeat="room in home.chatRooms" class="chatrooms">
 			<p>{{ room.name }}</p>
 		</div>
+		<button type="button" ng-click="rooms.createRoom">Create A New Room</button>
+	</section>
+</div>
+
+<div class="main">
+	<section class="message-panel">Messages
 	</section>
 </div>

@@ -4,9 +4,14 @@
     var rooms = $firebaseArray(ref);
 
     return {
-      all: rooms
+      all: rooms,
+	  createRoom: function(name) {
+		  ref.$add({name: name});
+	  }
     };
-  }
+	
+
+	}
 
   angular
     .module('blocChat')

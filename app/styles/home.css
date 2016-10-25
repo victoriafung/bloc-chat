@@ -1,5 +1,10 @@
+.top {
+	background-color: lightgrey;
+	padding: inherit;
+}
 .top #title {
 	text-align: center;
+	font-family: cursive;
 }
 
 .top #tagline {
@@ -8,21 +13,31 @@
 
 .sidebar {
 	clear: both;
-	background-color: #B5B4B5;
-	height: 1000px;
+	background-color: lightgrey;
+	height: 500px;
+	width: 200px;
+	font-family: fantasy;
+	float: left;
 }
 
 .sidebar .header {
 	margin: auto;
-	padding-top: 15px;
+	
 }
 
 .sidebar .header .title {
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .sidebar .rooms-list {
+	text-align: center;
 	margin: auto;
-	padding-top: 20px;
+	
+}
+.main {
+	margin-left: 150px;
+	height: 500px;
+	
+	
 }
