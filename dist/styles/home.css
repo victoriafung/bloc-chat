@@ -1,43 +1,29 @@
-.top {
-	background-color: lightgrey;
-	padding: inherit;
+body {
+	font-family: 'Abhaya Libre', serif;
+	color: cornflowerblue;
 }
-.top #title {
-	text-align: center;
-	font-family: cursive;
-}
-
-.top #tagline {
-	text-align: center;
-}
-
 .sidebar {
 	clear: both;
 	background-color: lightgrey;
 	height: 500px;
 	width: 200px;
-	font-family: fantasy;
+	
 	float: left;
 }
 
 .sidebar .header {
-	margin: auto;
-	
-}
-
-.sidebar .header .title {
-	text-align: center;
+	text-align: left;
 	font-size: 20px;
 }
 
 .sidebar .rooms-list {
-	text-align: center;
+	text-align: left;
 	margin: auto;
 	
 }
 .main {
-	margin-left: 150px;
+	margin-left: 0px;
+	padding-left: 0px;
 	height: 500px;
-	
 	
 }

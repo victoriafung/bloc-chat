@@ -1,18 +1,16 @@
-<section class="top">
-	<h1 id="title">Bloc Chat</h1>
-	<p id="tagline"></p>
-</section>
-
 <div class="sidebar">
 	<div class="header">
-		<p class="title">Chat Rooms List</p>
+		<h2 class="title">Bloc Chat</h2>
+		<p>Chat Rooms List</p>
 	</div>
 	
 	<section class="rooms-list">
 		<div ng-repeat="room in home.chatRooms" class="chatrooms">
 			<p>{{ room.name }}</p>
 		</div>
-		<button type="button" ng-click="rooms.createRoom">Create A New Room</button>
+		<div ng-controller="ModalCtrl">
+		<button type="button" ng-click="open()">Create A New Room</button>
+		</div>
 	</section>
 </div>
 

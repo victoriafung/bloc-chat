@@ -1,26 +1,17 @@
 (function() {
-	function ModalCtrl($uibModal, $scope, Room) {
-		$scope.createRoom = function(name){
-			//create room function
-			Room.createRoom(name);
-		
-		};
-		
-		$scope.open = function() {
-			//open modal
-		};
-		
-		$scope.close = function () {
-			//close modal
-		};
-		
-		$scope.submit = function () {
-			//when user clicks submit data to firebase
-		};
-	}
+    function ModalCtrl($scope, $uibModal) {
 
-angular
-.module('blocChat')
-.controller('ModalCtrl', ModalCtrl)
+        $scope.open = function(){
+            var modalInstance = $uibModal.open({
+                templateUrl: '/templates/modal.html',
+                controller: 'ModalInstanceCtrl',
+                size: 'md', // size per uimodal website
+                backdrop: 'static' // disables closing of modal by clicking anything but the buttons
+            });
+        };
+    }
 
+    angular
+        .module('blocChat')
+        .controller('ModalCtrl', ['$scope', '$uibModal', ModalCtrl]);
 })();

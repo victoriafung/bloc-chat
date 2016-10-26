@@ -6,8 +6,11 @@
     return {
       all: rooms,
 	  createRoom: function(name) {
-		  ref.$add({name: name});
+		  
+		  ref.$add(name);
+//		  $uibModalInstance.close('cancel');
 	  }
+
     };
 	
 
