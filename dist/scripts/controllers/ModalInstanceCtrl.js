@@ -2,12 +2,12 @@
 	function ModalInstanceCtrl($uibModalInstance, $scope, Room) {
 		
 		$scope.createRoom = function(name) {
-			Room.createRoom(name);
-			
+			Room.createRoom();
+			$uibModalInstance.dismiss('Cancel');
 		};
 
 		$scope.cancel = function () {
-		$uibModalInstance.close('Cancel');
+			$uibModalInstance.close();
 		}; 
 	};
 	
