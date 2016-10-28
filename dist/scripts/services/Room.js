@@ -4,16 +4,10 @@
     var rooms = $firebaseArray(ref);
 
     return {
-    	all: rooms,
 	  	createRoom: function(name) {
-//		  var name = confirm("create new room?");
-//		  if (name == true) {
-//		  	console.log(ref);
-			rooms.$add(name);
-//		  	rooms.$save();	
-//		  $uibModalInstance.close('cancel');
-	  		} 
-
+			rooms.$add({name: name});
+			},
+		all: rooms
     };
 
 }

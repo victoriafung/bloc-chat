@@ -15,6 +15,10 @@
 </div>
 
 <div class="main">
-	<section class="message-panel">Messages
+	<section class="message-panel">
+		<h1 class="message in home.content"> {{message.roomId}}</h1>
+		<div ng-repeat="message in home.content"> 
+			<p>{{message.username}} : {{ message.content }} @ {{message.sentAt}}</p>
+		</div>
 	</section>
 </div>

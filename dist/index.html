@@ -27,16 +27,18 @@
 	<script src="/scripts/controllers/ModalCtrl.js"></script>
 	<script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
 	<script src="/scripts/services/Room.js"></script>
+	<script src="/scripts/services/Message.js"></script>
 
 	<script>
 		// Initialize Firebase
-		var app = firebase.initializeApp({
+		var config = {
+		//var app = firebase.initializeApp({
 			apiKey: 'AIzaSyAlePtXD-bk-xZku_RsHZ8nEEv1xx7PU-4',
     		authDomain: 'bloc-chat-f7983.firebaseapp.com',
     		databaseURL: 'https://bloc-chat-f7983.firebaseio.com/',
     		storageBucket: 'bloc-chat-f7983.appspot.com'
-  		});
-		
+  		};
+		firebase.initializeApp(config);
 	</script>
 </body>
 </html>

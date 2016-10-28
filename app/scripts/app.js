@@ -17,6 +17,7 @@
 				controller: 'ModalCtrl as modal',
 				templateUrl: '/templates/modal.html'
 			});
+
 	}
 	
 	angular
