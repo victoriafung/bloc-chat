@@ -15,12 +15,18 @@
 			.state('modal', {
 				url: '/',
 				controller: 'ModalCtrl as modal',
-				templateUrl: '/templates/modal.html'
+				templateUrl: '/templates/roomModal.html'
+			})
+			.state('usermodal', {
+				url: '/',
+				controller: 'ModalCtrl as modal',
+				templateUrl: '/templates/userModal.html'
 			});
+		
 
 	}
 	
 	angular
-	.module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
+	.module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
 	.config(config);
 })();

@@ -9,6 +9,10 @@
 		$scope.cancel = function () {
 			$uibModalInstance.close();
 		}; 
+		
+		$scope.createUser = function(username) {
+			
+		}
 	};
 	
 angular

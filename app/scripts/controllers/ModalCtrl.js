@@ -8,7 +8,8 @@
                 size: 'sm', 
                 backdrop: 'static' // disables closing of modal by clicking anything but the buttons
             });
-			
+		
+		
         };
     }
 

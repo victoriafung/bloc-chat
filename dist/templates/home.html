@@ -6,20 +6,28 @@
 	
 	<section class="rooms-list">
 		<div ng-repeat="room in home.chatRooms" class="chatrooms">
-			<p>{{ room.name }}</p>
+			<button type="button" ng-click="changeRoom(room)">{{ room.name }}</button>
 		</div>
+		
 		<div ng-controller="ModalCtrl">
 		<button type="button" ng-click="open()">Create A New Room</button>
 		</div>
-	</section>
+		
+	
+	</section> 
 </div>
 
 <div class="main">
-	<section class="message-panel">
-		
-		<div ng-repeat="message in home.content"> 
+	<section class="message-panel">	
+		<div ng-repeat="message in messages">		
 			<p>{{message.username}}: {{ message.content }} </p>
 			<p class="time">{{message.sentAt}}</p>
-		</div>
+			<p>{{ message.username }}</p>	
+		</div>	
 	</section>
 </div>
+
+  <div class="input">
+    <input class="msginput" type="text" ng-model="msg" placeholder="Enter your message here">
+    <button class="sendbutton" ng-click="msgsend">Send</button>
+  </div>
