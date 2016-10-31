@@ -3,12 +3,11 @@
 
         $scope.open = function(){
             var modalInstance = $uibModal.open({
-                templateUrl: '/templates/modal.html',
+                templateUrl: '/templates/roomModal.html',
                 controller: 'ModalInstanceCtrl',
                 size: 'sm', 
                 backdrop: 'static' // disables closing of modal by clicking anything but the buttons
             });
-		
 		
         };
     }
