@@ -11,7 +11,7 @@
 		}; 
 		
 		$scope.createUser = function(username) {
-			$cookieStore.put('blocChatCurrentUser', 'username');
+			$cookieStore.put('blocChatCurrentUser', username);
 			$uibModalInstance.dismiss('Cancel');
 		};
 	};

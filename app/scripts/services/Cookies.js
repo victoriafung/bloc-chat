@@ -8,7 +8,9 @@
           controller: 'ModalInstanceCtrl',
           size: 'md'
       })
-    }
+    } else {
+		alert ("Welcome back " + currentUser +"!");
+	}
   }
 
   angular
