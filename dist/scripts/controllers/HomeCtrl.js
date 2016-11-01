@@ -5,9 +5,15 @@
 		
 		$scope.currentRoom = null;
 		$scope.messages = null;
+		$scope.message = null;
 		$scope.changeRoom = function(room){
 			$scope.currentRoom = room;
 			$scope.messages = Message.getByRoomId(room.$id);
+		}
+		
+		$scope.sendMessage = function(){
+			Message.send($scope.message, $scope.currentRoom.$id);
+			$scope.message = null;
 		}
 	}
 	

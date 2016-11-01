@@ -11,23 +11,24 @@
 		
 		<div ng-controller="ModalCtrl">
 		<button type="button" ng-click="open()">Create A New Room</button>
-		</div>
-		
-	
+		</div>	
 	</section> 
 </div>
 
 <div class="main">
 	<section class="message-panel">	
+		<div>
+			<p>{{ currentRoom.name }}</p>
+		</div>
 		<div ng-repeat="message in messages">		
 			<p>{{message.username}}: {{ message.content }} </p>
-			<p class="time">{{message.sentAt}}</p>
-			<p>{{ message.username }}</p>	
+			<p class="time">{{ message.sentAt | timeparse }}</p>
+
 		</div>	
 	</section>
 </div>
 
   <div class="input">
-    <input class="msginput" type="text" ng-model="msg" placeholder="Enter your message here">
-    <button class="sendbutton" ng-click="msgsend">Send</button>
+    <input class="msginput" type="text" ng-model="message" placeholder="Enter your message here">
+    <button class="sendbutton" ng-click="sendMessage()">Send</button>
   </div>

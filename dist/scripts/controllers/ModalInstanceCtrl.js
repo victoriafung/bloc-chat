@@ -2,7 +2,7 @@
 	function ModalInstanceCtrl($uibModalInstance, $cookieStore, $scope, Room) {
 		
 		$scope.createRoom = function(name) {
-			Room.createRoom();
+			Room.createRoom(name);
 			$uibModalInstance.dismiss('Cancel');
 		};
 
